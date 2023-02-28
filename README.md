@@ -1,4 +1,4 @@
-# WARNING
+## WARNING
 The current commit is legit just an archive of some crap i wrote a long time ago, and wont even work in the current version of garrys mod. So take everything with a grain of salt, or a shot of whiskey. Either or
 
 
@@ -8,8 +8,7 @@ The current commit is legit just an archive of some crap i wrote a long time ago
 
 
 
-About
----------------------------------------------
+## About
 GMOS (Garry's Mod Operating System) is a
 collection of scripts that make up a fake OS.
 
@@ -17,8 +16,7 @@ collection of scripts that make up a fake OS.
 
 
 
-Installation
----------------------------------------------
+## Installation
 All GMOS scripts should be in:
 C:\Program Files\Steam\steamapps\SourceMods\gmod9\lua\strike
 
@@ -26,8 +24,7 @@ C:\Program Files\Steam\steamapps\SourceMods\gmod9\lua\strike
 
 
 
-Getting Started
----------------------------------------------
+## Getting Started
 1)  Host a game of Garry's Mod
 
 2)  Open console and type:
@@ -40,8 +37,7 @@ Getting Started
 
 
 
-Using GMOS
----------------------------------------------
+## Using GMOS
 All of GMOS' commands are typed in chat (not console). Most GMOS commands
 require you to be aiming at an object or a spot on the ground.
 
@@ -50,8 +46,7 @@ The OBJECT TWEAKING COMMANDS require you to be aiming at the object you wish to 
 The OBJECT SPAWNING COMMANDS require you to be aiming at a spot on the ground where you wish to spawn the object.
 
 
-GENERAL COMMANDS
------------------------------------
+### GENERAL COMMANDS
  [ To initialize or shutdown GMOS on your client ]
 gmos system init
 gmos system shutdown
@@ -74,8 +69,7 @@ gmos music #1
 etc..
 
 
-OBJECT TWEAKING COMMANDS
------------------------------------
+### OBJECT TWEAKING COMMANDS
  [ To prevent an object from being deleted with Remove tool or moved by Physics/Gravity gun ]
 gmos tweak lock
 
@@ -98,8 +92,7 @@ gmos setmass XXX
 gmos info target
 
 
-OBJECT SPAWNING COMMANDS
------------------------------------
+### OBJECT SPAWNING COMMANDS
  [ To spawn a melon that gives health when you break it ]
 gmos spawn melon
 
@@ -129,8 +122,7 @@ gmos boombox #14
 gmos spawn masschange
 
 
-Known Bugs
----------------------------------------------
+# Known Bugs
 Destroying breakable objects (such as wood or explosive barrels) can cause object IDs
 to be reused without GMOS unregistering the original object. The result means that
 sometimes an object may become locked when nobody locked it. Usually the host is able to
