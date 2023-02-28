@@ -47,26 +47,15 @@ The OBJECT SPAWNING COMMANDS require you to be aiming at a spot on the ground wh
 
 
 ### GENERAL COMMANDS
- [ To initialize or shutdown GMOS on your client ]
-gmos system init
-gmos system shutdown
-
- [ To hide or show the GMOS window ]
-gmos status on
-gmos status off
-
- [ To broadcast a popup message window to all players ]
-gmos broadcastinfo Hello this is a message.
-
- [ To play a HL1 song on all players (type any number from about 0 to 30, some song numbers do not exist) ]
-gmos music $0
-gmos music $1
-etc..
-
- [ To play a HL2 song on all players (type any number from about 0 to 30, some song numbers do not exist) ]
-gmos music #0
-gmos music #1
-etc..
+| Command | Description |
+| ------- | ----------- |
+| gmos system init | To initialize GMOS on your client |
+| gmos system shutdown | To shutdown GMOS on your client |
+| gmos status on | Show the GMOS window |
+| gmos status off | Hide the GMOS window |
+| gmos broadcastinfo BLAHBLAH | To broadcast a popup message window to all players |
+| gmos music $x | To play a HL1 song on all players (replace x with any number from about 0 to 30, some song numbers do not exist) |
+| gmos music #x | To play a HL2 song on all players (replace x with any number from about 0 to 30, some song numbers do not exist) |
 
 
 ### OBJECT TWEAKING COMMANDS
@@ -83,33 +72,18 @@ etc..
 
 
 ### OBJECT SPAWNING COMMANDS
- [ To spawn a melon that gives health when you break it ]
-gmos spawn melon
+| Command | Description |
+| ------- | ----------- |
+| gmos spawn melon | To spawn a melon that gives health when you break it |
+| gmos spawn redbull | To spawn a RedBull that makes you run very fast when you break it |
+| gmos spawn poison | To spawn a bottle of poison that damages you when you break it |
+| gmos spawn laser | To spawn a laser that can be toggled on/off by pressing USE on it |
+| gmos spawn fieldgate | To spawn a fieldgate that can be toggled on/off by pressing USE on the console |
+| gmos spawn cannonkit | To spawn a cannon-kit that can be fired by pressing USE on the keypad (note that all 3 items must be frozen w/ gravity gun to enable keypad) |
+| gmos spawn grid | To spawn a 9x8x6 grid used for fort wars. Use remove tool to carve out hallways and rooms. Only one grid per player. Type   gmos destroy grid   to remove the whole grid at once |
+| gmos boombox $x / #x | To spawn a boombox with the specified song. Uses same $ or # scheme as  gmos music |
+| gmos spawn masschange | To spawn a crate that will switch between two masses when keypad is activated. Use  gmos masschangeon XXX   and  gmos masschangeoff XXX   while aiming at keypad to change on/off masses, where XXX is the new mass |
 
- [ To spawn a RedBull that makes you run very fast when you break it ]
-gmos spawn redbull
-
- [ To spawn a bottle of poison that damages you when you break it ]
-gmos spawn poison
-
- [ To spawn a laser that can be toggled on/off by pressing USE on it ]
-gmos spawn laser
-
- [ To spawn a fieldgate that can be toggled on/off by pressing USE on the console ]
-gmos spawn fieldgate
-
- [ To spawn a cannon-kit that can be fired by pressing USE on the keypad (note that all 3 items must be frozen w/ gravity gun to enable keypad) ]
-gmos spawn cannonkit
-
- [ To spawn a 9x8x6 grid used for fort wars. Use remove tool to carve out hallways and rooms. Only one grid per player. Type   gmos destroy grid   to remove the whole grid at once ]
-gmos spawn grid
-
- [ To spawn a boombox with the specified song. Uses same $ or # scheme as  gmos music ]
-gmos boombox $22
-gmos boombox #14
-
- [ To spawn a crate that will switch between two masses when keypad is activated. Use  gmos masschangeon XXX   and  gmos masschangeoff XXX   while aiming at keypad to change on/off masses, where XXX is the new mass ]
-gmos spawn masschange
 
 
 # Known Bugs
