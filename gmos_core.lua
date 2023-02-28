@@ -119,7 +119,7 @@ function gmosInit(userId)
 	gmosDisplayResult(userId, "GMOS Init Success", 1);
 
 	--// Display warning info
-	--//gmosDisplayInfo(userId, "Warning", "This game is regulated by a custom set of\nanti-faggot scripts. You are not allowed to\nremove or manipulate objects you have not\ncreated, unless explicitly unlocked by its\ncreator. Enjoy your stay.", false);
+	--//gmosDisplayInfo(userId, "Warning", "This game is regulated by a custom set of\nanti-griefer scripts. You are not allowed to\nremove or manipulate objects you have not\ncreated, unless explicitly unlocked by its\ncreator. Enjoy your stay.", false);
 
 	gmosUpdateViolationDisplay(userId);
 end
@@ -155,19 +155,19 @@ function gmosRegisterViolation(userId)
 		--// first time violators, give a warning message
 		if(v < 3) then
 			if(v == 1) then
-				gmosDisplayInfo(userId, "Violation", "Anti-Faggot system has detected a first-time\nviolation. Let it be the last.", true);
+				gmosDisplayInfo(userId, "Violation", "Anti-Griefer system has detected a first-time\nviolation. Let it be the last.", true);
 			else
 				_PlayerSetHealth(userId, _PlayerInfo(userId, "health") / 2);
 			end
 		elseif(v < 6) then
 			if(v == 3) then
-				gmosDisplayInfo(userId, "Violation", "Anti-Faggot system has detected three\nviolations. You will be penalized for further\nviolations.", false);
+				gmosDisplayInfo(userId, "Violation", "Anti-Griefer system has detected three\nviolations. You will be penalized for further\nviolations.", false);
 				_PlayerSetHealth(userId, _PlayerInfo(userId, "health") / 2);
 			else
 				_PlayerSetHealth(userId, 1);
 			end
 		elseif(v <= 9) then
-			gmosDisplayInfo(userId, "Violation", "Anti-Faggot system has detected six or more\nviolations. You are on your last leg...", false);
+			gmosDisplayInfo(userId, "Violation", "Anti-Griefer system has detected six or more\nviolations. You are on your last leg...", false);
 			_PlayerKill(userId);
 		else
 			--// bastard has violated 10 times..
