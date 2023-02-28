@@ -70,26 +70,16 @@ etc..
 
 
 ### OBJECT TWEAKING COMMANDS
- [ To prevent an object from being deleted with Remove tool or moved by Physics/Gravity gun ]
-gmos tweak lock
+| Command | Description |
+| ------- | ----------- |
+| gmos tweak lock | To prevent an object from being deleted with Remove tool or moved by Physics/Gravity gun |
+| gmos tweak unlock | To unlock an object, allowing it to be deleted with Remove tool or moved by Physics/Gravity gun |
+| gmos tweak fly | To set the mass of an object to an extremely small value. This is deprecated, use   gmos setmass |
+| gmos tweak big | To set the mass of an object to a large value. This is deprecated, use   gmos setmass |
+| gmos tweak huge | To set the mass of an object to an extremely large value. This is deprecated, use   gmos setmass |
+| gmos setmass XXX | To change the mass of an object to any value, where XXX is the new mass |
+| gmos info target | To get a popup message displaying information about an object you are aiming at; most notably including the entity type registered with GMOS, the object's mass, and the object's model filename |
 
- [ To unlock an object, allowing it to be deleted with Remove tool or moved by Physics/Gravity gun ]
-gmos tweak unlock
-
- [ To set the mass of an object to an extremely small value. This is deprecated, use   gmos setmass ]
-gmos tweak fly
-
- [ To set the mass of an object to a large value. This is deprecated, use   gmos setmass ]
-gmos tweak big
-
- [ To set the mass of an object to an extremely large value. This is deprecated, use   gmos setmass ]
-gmos tweak huge
-
- [ To change the mass of an object to any value, where XXX is the new mass ]
-gmos setmass XXX
-
- [ To get a popup message displaying information about an object you are aiming at; most notably including the entity type registered with GMOS, the object's mass, and the object's model filename ]
-gmos info target
 
 
 ### OBJECT SPAWNING COMMANDS
